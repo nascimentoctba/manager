@@ -1,0 +1,54 @@
+# Arquivos gerados automaticamente
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração local
+.env
+.env.*
+*.sqlite3
+
+# Arquivos e diretórios de mídia
+media/
+uploads/
+
+# Ambientes virtuais
+venv/
+env/
+
+# Arquivos de registro
+*.log
+
+# Arquivos de configuração de IDEs
+.idea/
+.vscode/
+*.sublime-*
+
+# Arquivos temporários
+*.swp
+
+# Arquivos de compilação Python
+*.pyc
+*.pyo
+*.pyd
+
+# Dependências e arquivos gerados pelo pip
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+lib/
+bin/
+include/
+pip-selfcheck.json
+
+# Arquivos do Docker Compose
+docker-compose.yml
+docker-compose.override.yml
+
+# Ambientes de produção
+static/
+node_modules/
+dist/
