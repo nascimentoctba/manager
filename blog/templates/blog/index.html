@@ -1,5 +1,17 @@
 {% extends "global/base.html" %}
+
 {% block valor %}
 {{titulo}}
 {%endblock valor %} 
+
+{% comment %} enviando posts para a pagina principal do Blog {% endcomment %}
+{% block posts %}
+
+{% comment %} percorrendo os posts enviados pela view do arquivo data {% endcomment %}
+{% for post in posts %}
+    {% comment %} Agora o include tera acesso ao post e podera acessar cada chave com post.chave {% endcomment %}
+    {% include "global/partials/postblock.html" %}
+{% endfor %}
+
+{% endblock posts %}
  

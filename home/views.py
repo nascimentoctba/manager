@@ -5,7 +5,8 @@ def home(request):
     
     context = {
         'titulo':'Estamos na pagina Home',
-        'title_page':'Manager Tex'
+        'title_page':'Manager Tex',
+        'msg_home':'Mensagem da Pagina Home',
     }
     
 

@@ -1,9 +1,19 @@
 from django.shortcuts import render
+#from blog.data import posts
+import requests 
+
 
 def blog(request):
+    response = requests.get("https://jsonplaceholder.typicode.com/posts")
+    if response.status_code == 200:
+        posts = response.json()
+    else:
+        posts = {'error_message':'Erro na solicitação'}
+
     context ={
         'titulo':'Pagina Inicial do Blog',
-        'title_page':'Manager Tex - Blog'
+        'title_page':'Manager Tex - Blog',
+        'posts':posts
     }
     return render(
         request, 
